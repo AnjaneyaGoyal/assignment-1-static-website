@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automated CI/CD Website - AWS S3 + CodePipeline</title>
+    <title>Automated CI/CD Website - AWS S3 + CodePipeline (v2.0)</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
         .card { background: #1e293b; padding: 40px; border-radius: 12px; border: 1px solid #334155; text-align: center; max-width: 600px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
-        .badge { background: #10b981; color: white; padding: 6px 14px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; display: inline-block; margin-bottom: 15px; }
+        .badge { background: #6366f1; color: white; padding: 6px 14px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; display: inline-block; margin-bottom: 15px; }
+        .success-box { background: rgba(34, 197, 94, 0.2); border: 1px solid #22c55e; color: #4ade80; padding: 12px; border-radius: 6px; margin: 15px 0; font-size: 0.95rem; }
         h1 { color: #38bdf8; margin: 10px 0; }
         p { color: #94a3b8; line-height: 1.6; }
-        .version { color: #a78bfa; font-weight: bold; }
+        .version { color: #a855f7; font-weight: bold; font-size: 1.1rem; }
     </style>
 </head>
 <body>
     <div class="card">
-        <span class="badge">CI/CD Pipeline: Active</span>
+        <span class="badge">CI/CD Auto-Triggered: Succeeded</span>
+        <div class="success-box">✓ Automated Deployment Verified: Git commit pushed live to S3!</div>
         <h1>Automated Static Website</h1>
-        <p>Deployed automatically via AWS CodePipeline to Amazon S3.</p>
+        <p>Continuous Delivery through AWS CodePipeline to Amazon S3.</p>
         <p>Author: <strong>Anjaneya Goyal</strong></p>
-        <p class="version">Release: v1.0.0 (Initial Deployment)</p>
+        <p class="version">Release: v2.0.0 (Automated CI/CD Verification)</p>
     </div>
 </body>
 </html>
